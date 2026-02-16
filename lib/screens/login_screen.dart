@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
                     radius: 1.8,
                     colors: [
-                      NebulaColors.accentPurple.withOpacity(0.15),
+                      NebulaColors.accentPurple.withValues(alpha: 0.15),
                       NebulaColors.bgDeep,
                       NebulaColors.bgDeep,
                     ],
@@ -113,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen>
                     height: 2 + rng.nextDouble() * 2,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: NebulaColors.accentCyan.withOpacity(opacity),
+                      color: NebulaColors.accentCyan.withValues(alpha: opacity),
                     ),
                   );
                 },
@@ -128,14 +128,14 @@ class _LoginScreenState extends State<LoginScreen>
                 margin: const EdgeInsets.all(32),
                 constraints: const BoxConstraints(maxWidth: 420),
                 decoration: BoxDecoration(
-                  color: NebulaColors.bgCard.withOpacity(0.85),
+                  color: NebulaColors.bgCard.withValues(alpha: 0.85),
                   borderRadius: BorderRadius.circular(24),
                   border: Border.all(
-                    color: NebulaColors.accentPurple.withOpacity(0.2),
+                    color: NebulaColors.accentPurple.withValues(alpha: 0.2),
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: NebulaColors.accentPurple.withOpacity(0.08),
+                      color: NebulaColors.accentPurple.withValues(alpha: 0.08),
                       blurRadius: 60,
                       spreadRadius: 10,
                     ),
@@ -160,7 +160,8 @@ class _LoginScreenState extends State<LoginScreen>
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
                             BoxShadow(
-                              color: NebulaColors.accentPurple.withOpacity(0.4),
+                              color: NebulaColors.accentPurple
+                                  .withValues(alpha: 0.4),
                               blurRadius: 20,
                               spreadRadius: 2,
                             ),
@@ -243,7 +244,7 @@ class _LoginScreenState extends State<LoginScreen>
                                   boxShadow: [
                                     BoxShadow(
                                       color: NebulaColors.accentPurple
-                                          .withOpacity(0.3),
+                                          .withValues(alpha: 0.3),
                                       blurRadius: 12,
                                       offset: const Offset(0, 4),
                                     ),
@@ -281,7 +282,8 @@ class _LoginScreenState extends State<LoginScreen>
                       ),
                       const SizedBox(height: 8),
                       Divider(
-                          color: NebulaColors.borderSubtle.withOpacity(0.5)),
+                          color:
+                              NebulaColors.borderSubtle.withValues(alpha: 0.5)),
                       const SizedBox(height: 8),
                       TextButton.icon(
                         onPressed: () {

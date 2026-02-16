@@ -59,6 +59,11 @@ class CsvService {
       throw Exception('The selected CSV file has no text content.');
     }
 
+    debugPrint('CSV Service: Parsed string length: ${csvString.length}');
+    if (csvString.length < 100) {
+      debugPrint('CSV Service: Content snippet: $csvString');
+    }
+
     const converter = CsvToListConverter(
       shouldParseNumbers: false,
       allowInvalid: true,
@@ -91,7 +96,12 @@ class CsvService {
 
     for (int i = startIdx; i < rows.length; i++) {
       final row = rows[i];
-      if (row.length < 2) continue; // Skip empty/invalid rows
+      if (row.isEmpty) continue; // Skip completely empty rows
+
+      if (row.length < 2) {
+        debugPrint(
+            'CSV Service Warning: Row has ${row.length} columns. Potential delimiter issue or single-column data.');
+      }
 
       leads.add(Lead(
         id: _uuid.v4(),
@@ -113,28 +123,36 @@ class CsvService {
 
   Future<List<int>?> _readFileBytes(PlatformFile file) async {
     if (file.bytes != null && file.bytes!.isNotEmpty) {
+      debugPrint(
+          'CSV Service: Reading from file.bytes (${file.bytes!.length} bytes)');
       return file.bytes!;
     }
 
     final stream = file.readStream;
     if (stream != null) {
+      debugPrint('CSV Service: Reading from file.readStream');
       final chunks = <int>[];
       await for (final chunk in stream) {
         chunks.addAll(chunk);
       }
       if (chunks.isNotEmpty) {
+        debugPrint('CSV Service: Read ${chunks.length} bytes from stream');
         return chunks;
       }
     }
 
     final path = file.path;
     if (!kIsWeb && path != null && path.isNotEmpty) {
+      debugPrint('CSV Service: Reading from file.path ($path)');
       final localFile = File(path);
       if (await localFile.exists()) {
         final bytes = await localFile.readAsBytes();
         if (bytes.isNotEmpty) {
+          debugPrint('CSV Service: Read ${bytes.length} bytes from path');
           return bytes;
         }
+      } else {
+        debugPrint('CSV Service: File at path does not exist');
       }
     }
 

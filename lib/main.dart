@@ -101,7 +101,7 @@ class MyApp extends StatelessWidget {
             ),
             iconTheme: IconThemeData(color: NebulaColors.textSecondary),
           ),
-          cardTheme: const CardTheme(
+          cardTheme: const CardThemeData(
             color: NebulaColors.bgSurface,
             elevation: 0,
             shape: RoundedRectangleBorder(
@@ -164,7 +164,7 @@ class MyApp extends StatelessWidget {
           dividerTheme: const DividerThemeData(
             color: NebulaColors.borderSubtle,
           ),
-          dialogTheme: const DialogTheme(
+          dialogTheme: const DialogThemeData(
             backgroundColor: NebulaColors.bgCard,
             surfaceTintColor: Colors.transparent,
             shape: RoundedRectangleBorder(

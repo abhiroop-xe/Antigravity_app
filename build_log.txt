@@ -1,0 +1,1781 @@
+Script started on 2026-02-16 03:39:05+01:00 [COMMAND="flutter build web --release --base-href '/Antigravity_app/' --verbose" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="20" LINES="10"]
+[[1m +201 ms[22m] Unable to
+locate an Android SDK.
+[  +51 ms] executing:
+uname -m
+[  +19 ms] Exit code 0
+from: uname -m
+[   +2 ms] x86_64
+[  +40 ms] Artifact
+Instance of
+'MaterialFonts' is not
+required, skipping
+update.
+[   +1 ms] Artifact
+Instance of
+'GradleWrapper' is not
+required, skipping
+update.
+[   +2 ms] Artifact
+Instance of
+'AndroidGenSnapshotArtif
+acts' is not required,
+skipping update.
+[   +2 ms] Artifact
+Instance of
+'AndroidInternalBuildArt
+ifacts' is not required,
+skipping update.
+[   +1 ms] Artifact
+Instance of
+'IOSEngineArtifacts' is
+not required, skipping
+update.
+[        ] Artifact
+Instance of
+'FlutterWebSdk' is not
+required, skipping
+update.
+[  +20 ms] Artifact
+Instance of
+'LegacyCanvasKitRemover'
+is not required,
+skipping update.
+[   +1 ms] Artifact
+Instance of 'FlutterSdk'
+is not required,
+skipping update.
+[   +6 ms] Artifact
+Instance of
+'WindowsEngineArtifacts'
+is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'MacOSEngineArtifacts'
+is not required,
+skipping update.
+[   +1 ms] Artifact
+Instance of
+'LinuxEngineArtifacts'
+is not required,
+skipping update.
+[   +3 ms] Artifact
+Instance of
+'LinuxFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[   +1 ms] Artifact
+Instance of
+'MacOSFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[   +3 ms] Artifact
+Instance of
+'FlutterRunnerSDKArtifac
+ts' is not required,
+skipping update.
+[   +2 ms] Artifact
+Instance of
+'FlutterRunnerDebugSymbo
+ls' is not required,
+skipping update.
+[   +4 ms] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[   +1 ms] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[   +1 ms] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'FontSubsetArtifacts' is
+not required, skipping
+update.
+[   +6 ms] Artifact
+Instance of
+'PubDependencies' is not
+required, skipping
+update.
+[   +2 ms] executing:
+[/home/abhiroop/Antigrav
+ity/Claude/flutter/] git
+-c
+log.showSignature=false
+log HEAD -n 1
+--pretty=format:%ad
+--date=iso
+[  +27 ms] Exit code 0
+from: git -c
+log.showSignature=false
+log HEAD -n 1
+--pretty=format:%ad
+--date=iso
+[   +1 ms] 2026-02-12
+17:12:32 -0800
+[  +52 ms] Artifact
+Instance of
+'AndroidGenSnapshotArtif
+acts' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'AndroidInternalBuildArt
+ifacts' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'IOSEngineArtifacts' is
+not required, skipping
+update.
+[        ] Artifact
+Instance of
+'FlutterWebSdk' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'FlutterEngineStamp' is
+not required, skipping
+update.
+[        ] Artifact
+Instance of
+'LegacyCanvasKitRemover'
+is not required,
+skipping update.
+[   +6 ms] Artifact
+Instance of
+'WindowsEngineArtifacts'
+is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'MacOSEngineArtifacts'
+is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'LinuxEngineArtifacts'
+is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'LinuxFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'MacOSFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'FlutterRunnerSDKArtifac
+ts' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'FlutterRunnerDebugSymbo
+ls' is not required,
+skipping update.
+[[1m +146 ms[22m] Artifact
+Instance of
+'MaterialFonts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'GradleWrapper' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'AndroidGenSnapshotArtif
+acts' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'AndroidInternalBuildArt
+ifacts' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'IOSEngineArtifacts' is
+not required, skipping
+update.
+[   +2 ms] Artifact
+Instance of
+'FlutterEngineStamp' is
+not required, skipping
+update.
+[   +4 ms] Artifact
+Instance of 'FlutterSdk'
+is not required,
+skipping update.
+[   +1 ms] Artifact
+Instance of
+'WindowsEngineArtifacts'
+is not required,
+skipping update.
+[   +4 ms] Artifact
+Instance of
+'MacOSEngineArtifacts'
+is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'LinuxEngineArtifacts'
+is not required,
+skipping update.
+[   +9 ms] Artifact
+Instance of
+'LinuxFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'MacOSFuchsiaSDKArtifact
+s' is not required,
+skipping update.
+[        ] Artifact
+Instance of
+'FlutterRunnerSDKArtifac
+ts' is not required,
+skipping update.
+[   +2 ms] Artifact
+Instance of
+'FlutterRunnerDebugSymbo
+ls' is not required,
+skipping update.
+[   +2 ms] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[   +3 ms] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'IosUsbArtifacts' is not
+required, skipping
+update.
+[        ] Artifact
+Instance of
+'FontSubsetArtifacts' is
+not required, skipping
+update.
+[        ] Artifact
+Instance of
+'PubDependencies' is not
+required, skipping
+update.
+[[1m +267 ms[22m] executing:
+[/home/abhiroop/Antigrav
+ity/Claude/App/]
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/dart-sdk/bin/dart
+pub --suppress-analytics
+--color --directory .
+get --example
+Resolving dependencies... 
+Downloading packages... 
+  [1mapp_links[0m 6.4.1 [36m(7.0.0 available)[39m
+  [1masync[0m 2.11.0 [36m(2.13.0 available)[39m
+  [1mboolean_selector[0m 2.1.1 [36m(2.1.2 available)[39m
+[32m> [39m[1mcharacters[0m 1.4.1 (was 1.3.0)
+[32m> [39m[1mclock[0m 1.1.2 (was 1.1.1)
+[32m> [39m[1mcollection[0m 1.19.1 (was 1.18.0)
+  [1mcross_file[0m 0.3.4+2 [36m(0.3.5+2 available)[39m
+  [1mcsv[0m 6.0.0 [36m(7.1.0 available)[39m
+  [1mdart_jsonwebtoken[0m 2.17.0 [36m(3.3.1 available)[39m
+[32m> [39m[1mfake_async[0m 1.3.3 (was 1.3.1)
+  [1mffi[0m 2.1.3 [36m(2.2.0 available)[39m
+  [1mfl_chart[0m 0.69.2 [36m(1.1.1 available)[39m
+  [1mflutter_lints[0m 3.0.2 [36m(6.0.0 available)[39m
+  [1mflutter_plugin_android_lifecycle[0m 2.0.26 [36m(2.0.33 available)[39m
+  [1mgo_router[0m 14.8.1 [36m(17.1.0 available)[39m
+  [1mhttp_parser[0m 4.0.2 [36m(4.1.2 available)[39m
+  [1mjs[0m 0.7.1 [36m(0.7.2 available)[39m
+[32m> [39m[1mleak_tracker[0m 11.0.2 (was 10.0.5)
+[32m> [39m[1mleak_tracker_flutter_testing[0m 3.0.10 (was 3.0.5)
+[32m> [39m[1mleak_tracker_testing[0m 3.0.2 (was 3.0.1)
+  [1mlints[0m 3.0.0 [36m(6.1.0 available)[39m
+[32m> [39m[1mmatcher[0m 0.12.18 (was 0.12.16+1)
+[32m> [39m[1mmaterial_color_utilities[0m 0.13.0 (was 0.11.1)
+[32m> [39m[1mmeta[0m 1.17.0 (was 1.15.0) [36m(1.18.1 available)[39m
+[32m> [39m[1mpath[0m 1.9.1 (was 1.9.0)
+  [1mpath_provider_android[0m 2.2.15 [36m(2.2.22 available)[39m
+  [1mpath_provider_foundation[0m 2.4.1 [36m(2.6.0 available)[39m
+  [1mpetitparser[0m 6.0.2 [36m(7.0.2 available)[39m
+  [1mpointycastle[0m 3.9.1 [36m(4.0.0 available)[39m
+  [1mshared_preferences[0m 2.5.3 [36m(2.5.4 available)[39m
+  [1mshared_preferences_android[0m 2.4.7 [36m(2.4.20 available)[39m
+  [1mshared_preferences_foundation[0m 2.5.4 [36m(2.5.6 available)[39m
+[36m< [39m[1msky_engine[0m 0.0.0 from sdk flutter (was 0.0.99 from sdk flutter)
+  [1msource_span[0m 1.10.0 [36m(1.10.2 available)[39m
+[32m> [39m[1mstack_trace[0m 1.12.1 (was 1.11.1)
+[32m> [39m[1mstream_channel[0m 2.1.4 (was 2.1.2)
+  [1mstring_scanner[0m 1.2.0 [36m(1.4.1 available)[39m
+  [1mterm_glyph[0m 1.2.1 [36m(1.2.2 available)[39m
+[32m> [39m[1mtest_api[0m 0.7.9 (was 0.7.2)
+  [1murl_launcher[0m 6.3.1 [36m(6.3.2 available)[39m
+  [1murl_launcher_android[0m 6.3.14 [36m(6.3.28 available)[39m
+  [1murl_launcher_ios[0m 6.3.3 [36m(6.4.1 available)[39m
+  [1murl_launcher_linux[0m 3.2.1 [36m(3.2.2 available)[39m
+  [1murl_launcher_macos[0m 3.2.2 [36m(3.2.5 available)[39m
+  [1murl_launcher_web[0m 2.3.3 [36m(2.4.2 available)[39m
+  [1murl_launcher_windows[0m 3.1.4 [36m(3.1.5 available)[39m
+[32m> [39m[1mvector_math[0m 2.2.0 (was 2.1.4)
+  [1mvm_service[0m 14.2.5 [36m(15.0.2 available)[39m
+  [1mwin32[0m 5.10.1 [36m(5.15.0 available)[39m
+  [1mxml[0m 6.5.0 [36m(6.6.1 available)[39m
+Changed 16 dependencies!
+35 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+[[1m+1621 ms[22m] Found plugin
+url_launcher at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher-6.3.1/
+[  +20 ms] Found plugin
+url_launcher_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_windows-3.1.4/
+[  +19 ms] Found plugin
+url_launcher_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_web-2.3.3/
+[   +9 ms] Found plugin
+url_launcher_macos at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_macos-3.2.2/
+[  +13 ms] Found plugin
+url_launcher_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_linux-3.2.1/
+[  +16 ms] Found plugin
+url_launcher_ios at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_ios-6.3.3/
+[  +81 ms] Found plugin
+url_launcher_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_android-6.3.14/
+[[1m +182 ms[22m] Found plugin
+shared_preferences at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences-2.5.3/
+[   +2 ms] Found plugin
+shared_preferences_windo
+ws at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_windows-2.4.
+1/
+[   +7 ms] Found plugin
+path_provider_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_windows-2.3.0/
+[  +14 ms] Found plugin
+shared_preferences_web
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_web-2.4.3/
+[   +5 ms] Found plugin
+shared_preferences_linux
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_linux-2.4.1/
+[   +7 ms] Found plugin
+path_provider_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_linux-2.2.1/
+[   +7 ms] Found plugin
+shared_preferences_found
+ation at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_foundation-2
+.5.4/
+[   +9 ms] Found plugin
+shared_preferences_andro
+id at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_android-2.4.
+7/
+[  +12 ms] Found plugin
+path_provider at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider-2.1.5/
+[   +4 ms] Found plugin
+path_provider_foundation
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_foundation-2.4.1/
+[   +4 ms] Found plugin
+path_provider_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_android-2.2.15/
+[   +7 ms] Found plugin
+app_links at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks-6.4.1/
+[  +10 ms] Found plugin
+app_links_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_web-1.0.4/
+[   +7 ms] Found plugin
+app_links_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_linux-1.0.3/
+[   +5 ms] Found plugin
+gtk at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/gtk-2.1
+.0/
+[  +23 ms] Found plugin
+file_picker at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/file_pi
+cker-10.3.10/
+[  +18 ms] Found plugin
+flutter_plugin_android_l
+ifecycle at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/flutter
+_plugin_android_lifecycl
+e-2.0.26/
+[[1m +328 ms[22m] Found plugin
+url_launcher at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher-6.3.1/
+[   +2 ms] Found plugin
+url_launcher_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_windows-3.1.4/
+[  +35 ms] Found plugin
+url_launcher_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_web-2.3.3/
+[  +17 ms] Found plugin
+url_launcher_macos at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_macos-3.2.2/
+[  +12 ms] Found plugin
+url_launcher_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_linux-3.2.1/
+[   +4 ms] Found plugin
+url_launcher_ios at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_ios-6.3.3/
+[   +2 ms] Found plugin
+url_launcher_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_android-6.3.14/
+[  +83 ms] Found plugin
+shared_preferences at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences-2.5.3/
+[   +2 ms] Found plugin
+shared_preferences_windo
+ws at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_windows-2.4.
+1/
+[   +6 ms] Found plugin
+path_provider_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_windows-2.3.0/
+[  +20 ms] Found plugin
+shared_preferences_web
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_web-2.4.3/
+[   +4 ms] Found plugin
+shared_preferences_linux
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_linux-2.4.1/
+[   +5 ms] Found plugin
+path_provider_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_linux-2.2.1/
+[  +15 ms] Found plugin
+shared_preferences_found
+ation at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_foundation-2
+.5.4/
+[   +9 ms] Found plugin
+shared_preferences_andro
+id at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_android-2.4.
+7/
+[   +6 ms] Found plugin
+path_provider at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider-2.1.5/
+[   +2 ms] Found plugin
+path_provider_foundation
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_foundation-2.4.1/
+[   +2 ms] Found plugin
+path_provider_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_android-2.2.15/
+[   +2 ms] Found plugin
+app_links at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks-6.4.1/
+[   +3 ms] Found plugin
+app_links_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_web-1.0.4/
+[   +9 ms] Found plugin
+app_links_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_linux-1.0.3/
+[   +2 ms] Found plugin
+gtk at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/gtk-2.1
+.0/
+[  +16 ms] Found plugin
+file_picker at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/file_pi
+cker-10.3.10/
+[   +5 ms] Found plugin
+flutter_plugin_android_l
+ifecycle at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/flutter
+_plugin_android_lifecycl
+e-2.0.26/
+[  +60 ms] Skipping
+generating
+web_plugin_registrant.da
+rt because it is
+up-to-date.
+[[1m +129 ms[22m] Found plugin
+url_launcher at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher-6.3.1/
+[   +2 ms] Found plugin
+url_launcher_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_windows-3.1.4/
+[  +19 ms] Found plugin
+url_launcher_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_web-2.3.3/
+[  +18 ms] Found plugin
+url_launcher_macos at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_macos-3.2.2/
+[   +2 ms] Found plugin
+url_launcher_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_linux-3.2.1/
+[   +5 ms] Found plugin
+url_launcher_ios at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_ios-6.3.3/
+[   +2 ms] Found plugin
+url_launcher_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_android-6.3.14/
+[  +54 ms] Found plugin
+shared_preferences at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences-2.5.3/
+[   +5 ms] Found plugin
+shared_preferences_windo
+ws at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_windows-2.4.
+1/
+[   +7 ms] Found plugin
+path_provider_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_windows-2.3.0/
+[  +12 ms] Found plugin
+shared_preferences_web
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_web-2.4.3/
+[   +2 ms] Found plugin
+shared_preferences_linux
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_linux-2.4.1/
+[   +2 ms] Found plugin
+path_provider_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_linux-2.2.1/
+[   +5 ms] Found plugin
+shared_preferences_found
+ation at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_foundation-2
+.5.4/
+[   +7 ms] Found plugin
+shared_preferences_andro
+id at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_android-2.4.
+7/
+[   +2 ms] Found plugin
+path_provider at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider-2.1.5/
+[   +3 ms] Found plugin
+path_provider_foundation
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_foundation-2.4.1/
+[   +7 ms] Found plugin
+path_provider_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_android-2.2.15/
+[   +2 ms] Found plugin
+app_links at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks-6.4.1/
+[   +4 ms] Found plugin
+app_links_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_web-1.0.4/
+[   +4 ms] Found plugin
+app_links_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_linux-1.0.3/
+[   +6 ms] Found plugin
+gtk at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/gtk-2.1
+.0/
+[  +18 ms] Found plugin
+file_picker at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/file_pi
+cker-10.3.10/
+[  +12 ms] Found plugin
+flutter_plugin_android_l
+ifecycle at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/flutter
+_plugin_android_lifecycl
+e-2.0.26/
+[  +57 ms] Generating
+/home/abhiroop/Antigravi
+ty/Claude/App/android/ap
+p/src/main/java/io/flutt
+er/plugins/GeneratedPlug
+inRegistrant.java
+[   +4 ms] Skipping
+generating
+GeneratedPluginRegistran
+t.java because it is
+up-to-date.
+[  +12 ms] Skipping
+generating
+generated_plugin_registr
+ant.h because it is
+up-to-date.
+[   +2 ms] Skipping
+generating
+generated_plugin_registr
+ant.cc because it is
+up-to-date.
+[   +4 ms] Skipping
+generating
+generated_plugins.cmake
+because it is
+up-to-date.
+[   +9 ms] Skipping
+generating
+generated_plugin_registr
+ant.h because it is
+up-to-date.
+[   +3 ms] Skipping
+generating
+generated_plugin_registr
+ant.cc because it is
+up-to-date.
+[   +5 ms] Skipping
+generating
+generated_plugins.cmake
+because it is
+up-to-date.
+[   +9 ms] Skipping
+generating
+GeneratedPluginRegistran
+t.h because it is
+up-to-date.
+[   +5 ms] Skipping
+generating
+GeneratedPluginRegistran
+t.m because it is
+up-to-date.
+[   +3 ms] Skipping
+generating
+GeneratedPluginRegistran
+t.swift because it is
+up-to-date.
+[[1m +201 ms[22m] Found plugin
+url_launcher at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher-6.3.1/
+[   +6 ms] Found plugin
+url_launcher_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_windows-3.1.4/
+[  +14 ms] Found plugin
+url_launcher_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_web-2.3.3/
+[  +43 ms] Found plugin
+url_launcher_macos at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_macos-3.2.2/
+[   +5 ms] Found plugin
+url_launcher_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_linux-3.2.1/
+[   +5 ms] Found plugin
+url_launcher_ios at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_ios-6.3.3/
+[   +3 ms] Found plugin
+url_launcher_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_android-6.3.14/
+[  +49 ms] Found plugin
+shared_preferences at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences-2.5.3/
+[   +2 ms] Found plugin
+shared_preferences_windo
+ws at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_windows-2.4.
+1/
+[   +6 ms] Found plugin
+path_provider_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_windows-2.3.0/
+[  +15 ms] Found plugin
+shared_preferences_web
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_web-2.4.3/
+[   +1 ms] Found plugin
+shared_preferences_linux
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_linux-2.4.1/
+[   +2 ms] Found plugin
+path_provider_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_linux-2.2.1/
+[   +8 ms] Found plugin
+shared_preferences_found
+ation at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_foundation-2
+.5.4/
+[   +2 ms] Found plugin
+shared_preferences_andro
+id at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_android-2.4.
+7/
+[   +2 ms] Found plugin
+path_provider at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider-2.1.5/
+[   +2 ms] Found plugin
+path_provider_foundation
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_foundation-2.4.1/
+[   +3 ms] Found plugin
+path_provider_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_android-2.2.15/
+[   +6 ms] Found plugin
+app_links at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks-6.4.1/
+[   +4 ms] Found plugin
+app_links_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_web-1.0.4/
+[  +10 ms] Found plugin
+app_links_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_linux-1.0.3/
+[   +2 ms] Found plugin
+gtk at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/gtk-2.1
+.0/
+[  +17 ms] Found plugin
+file_picker at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/file_pi
+cker-10.3.10/
+[   +2 ms] Found plugin
+flutter_plugin_android_l
+ifecycle at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/flutter
+_plugin_android_lifecycl
+e-2.0.26/
+[  +12 ms]
+generated_plugin_registr
+ant.dart not found.
+Skipping.
+[   +5 ms] [1mCompiling
+lib/main.dart[22m
+[1m           for the
+Web...[22m
+[  +36 ms] Initializing
+file store
+[[1m +154 ms[22m] invalidated
+build due to missing
+files:
+/home/abhiroop/Antigravi
+ty/Claude/App/web/*/inde
+x.html,
+/home/abhiroop/Antigravi
+ty/Claude/App/web/flutte
+r_bootstrap.js
+[  +19 ms]
+web_entrypoint: Starting
+due to
+{InvalidatedReasonKind.o
+utputSetAddition: The
+following outputs were
+added to the output set:
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+main.dart,
+InvalidatedReasonKind.in
+putChanged: The
+following inputs have
+updated contents:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/packag
+es/flutter_tools/lib/src
+/build_system/targets/we
+b.dart}
+[   +5 ms] Skipping
+target:
+gen_localizations
+[  +14 ms]
+web_templated_files:
+Starting due to
+{InvalidatedReasonKind.b
+uildKeyChanged: The
+target build key
+changed.,
+InvalidatedReasonKind.ou
+tputSetAddition: The
+following outputs were
+added to the output set:
+/home/abhiroop/Antigravi
+ty/Claude/App/build/web/
+*/index.html,/home/abhir
+oop/Antigravity/Claude/A
+pp/build/web/flutter_boo
+tstrap.js,
+InvalidatedReasonKind.in
+putMissing: The
+following inputs were
+missing:
+/home/abhiroop/Antigravi
+ty/Claude/App/web/*/inde
+x.html,/home/abhiroop/An
+tigravity/Claude/App/web
+/flutter_bootstrap.js,
+InvalidatedReasonKind.in
+putChanged: The
+following inputs have
+updated contents:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/engine.stamp}
+[  +11 ms] dart_build:
+Starting due to {}
+[  +68 ms]
+web_static_assets:
+Starting due to
+{InvalidatedReasonKind.i
+nputChanged: The
+following inputs have
+updated contents:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/engine.stamp,
+InvalidatedReasonKind.ou
+tputSetAddition: The
+following outputs were
+added to the output set:
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+flutter.js,/home/abhiroo
+p/Antigravity/Claude/App
+/.dart_tool/flutter_buil
+d/e90e5ad3b336f3f9e09635
+074d05a6f1/canvaskit/can
+vaskit.js,/home/abhiroop
+/Antigravity/Claude/App/
+.dart_tool/flutter_build
+/e90e5ad3b336f3f9e096350
+74d05a6f1/canvaskit/skwa
+sm_heavy.js.symbols,/hom
+e/abhiroop/Antigravity/C
+laude/App/.dart_tool/flu
+tter_build/e90e5ad3b336f
+3f9e09635074d05a6f1/canv
+askit/skwasm.js.symbols,
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+canvaskit/wimp.wasm,/hom
+e/abhiroop/Antigravity/C
+laude/App/.dart_tool/flu
+tter_build/e90e5ad3b336f
+3f9e09635074d05a6f1/canv
+askit/skwasm_heavy.wasm,
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+canvaskit/wimp.js.symbol
+s,/home/abhiroop/Antigra
+vity/Claude/App/.dart_to
+ol/flutter_build/e90e5ad
+3b336f3f9e09635074d05a6f
+1/canvaskit/skwasm_heavy
+.js,/home/abhiroop/Antig
+ravity/Claude/App/.dart_
+tool/flutter_build/e90e5
+ad3b336f3f9e09635074d05a
+6f1/canvaskit/canvaskit.
+wasm,/home/abhiroop/Anti
+gravity/Claude/App/.dart
+_tool/flutter_build/e90e
+5ad3b336f3f9e09635074d05
+a6f1/canvaskit/canvaskit
+.js.symbols,/home/abhiro
+op/Antigravity/Claude/Ap
+p/.dart_tool/flutter_bui
+ld/e90e5ad3b336f3f9e0963
+5074d05a6f1/canvaskit/ch
+romium/canvaskit.js,/hom
+e/abhiroop/Antigravity/C
+laude/App/.dart_tool/flu
+tter_build/e90e5ad3b336f
+3f9e09635074d05a6f1/canv
+askit/chromium/canvaskit
+.wasm,/home/abhiroop/Ant
+igravity/Claude/App/.dar
+t_tool/flutter_build/e90
+e5ad3b336f3f9e09635074d0
+5a6f1/canvaskit/chromium
+/canvaskit.js.symbols,/h
+ome/abhiroop/Antigravity
+/Claude/App/.dart_tool/f
+lutter_build/e90e5ad3b33
+6f3f9e09635074d05a6f1/ca
+nvaskit/wimp.js,/home/ab
+hiroop/Antigravity/Claud
+e/App/.dart_tool/flutter
+_build/e90e5ad3b336f3f9e
+09635074d05a6f1/canvaski
+t/skwasm.wasm,/home/abhi
+roop/Antigravity/Claude/
+App/.dart_tool/flutter_b
+uild/e90e5ad3b336f3f9e09
+635074d05a6f1/canvaskit/
+skwasm.js}
+[[1m +322 ms[22m]
+web_static_assets:
+Complete
+[[1m +110 ms[22m]
+web_templated_files:
+Complete
+[[1m +150 ms[22m] No packages
+with native assets.
+Skipping native assets
+compilation.
+[  +11 ms] dart_build:
+Complete
+[  +22 ms] Found plugin
+url_launcher at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher-6.3.1/
+[   +2 ms] Found plugin
+url_launcher_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_windows-3.1.4/
+[   +7 ms] Found plugin
+url_launcher_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_web-2.3.3/
+[   +4 ms] Found plugin
+url_launcher_macos at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_macos-3.2.2/
+[   +2 ms] Found plugin
+url_launcher_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_linux-3.2.1/
+[   +2 ms] Found plugin
+url_launcher_ios at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_ios-6.3.3/
+[   +2 ms] Found plugin
+url_launcher_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/url_lau
+ncher_android-6.3.14/
+[  +46 ms] Found plugin
+shared_preferences at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences-2.5.3/
+[   +2 ms] Found plugin
+shared_preferences_windo
+ws at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_windows-2.4.
+1/
+[  +15 ms] Found plugin
+path_provider_windows at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_windows-2.3.0/
+[  +26 ms] Found plugin
+shared_preferences_web
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_web-2.4.3/
+[   +4 ms] Found plugin
+shared_preferences_linux
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_linux-2.4.1/
+[   +5 ms] Found plugin
+path_provider_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_linux-2.2.1/
+[  +15 ms] Found plugin
+shared_preferences_found
+ation at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_foundation-2
+.5.4/
+[  +13 ms] Found plugin
+shared_preferences_andro
+id at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/shared_
+preferences_android-2.4.
+7/
+[   +3 ms] Found plugin
+path_provider at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider-2.1.5/
+[   +8 ms] Found plugin
+path_provider_foundation
+at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_foundation-2.4.1/
+[   +3 ms] Found plugin
+path_provider_android at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/path_pr
+ovider_android-2.2.15/
+[   +3 ms] Found plugin
+app_links at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks-6.4.1/
+[   +7 ms] Found plugin
+app_links_web at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_web-1.0.4/
+[   +6 ms] Found plugin
+app_links_linux at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/app_lin
+ks_linux-1.0.3/
+[   +2 ms] Found plugin
+gtk at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/gtk-2.1
+.0/
+[  +17 ms] Found plugin
+file_picker at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/file_pi
+cker-10.3.10/
+[  +12 ms] Found plugin
+flutter_plugin_android_l
+ifecycle at
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/flutter
+_plugin_android_lifecycl
+e-2.0.26/
+[  +18 ms]
+web_entrypoint: Complete
+[   +2 ms] dart2js:
+Starting due to {}
+[  +18 ms] executing:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/dart-sdk/bin/dart
+compile js
+--platform-binaries=/hom
+e/abhiroop/Antigravity/C
+laude/flutter/bin/cache/
+flutter_web_sdk/kernel
+--invoker=flutter_tool
+-Ddart.vm.product=true
+-DFLUTTER_VERSION=3.41.1
+-DFLUTTER_CHANNEL=stable
+-DFLUTTER_GIT_URL=https:
+//github.com/flutter/flu
+tter.git
+-DFLUTTER_FRAMEWORK_REVI
+SION=582a0e7c55
+-DFLUTTER_ENGINE_REVISIO
+N=3452d735bd
+-DFLUTTER_DART_VERSION=3
+.11.0
+-DFLUTTER_WEB_USE_SKIA=t
+rue
+-DFLUTTER_WEB_USE_SKWASM
+=false
+-DFLUTTER_WEB_CANVASKIT_
+URL=https://www.gstatic.
+com/flutter-canvaskit/34
+52d735bd38224ef2db85ca76
+3d862d6326b17f/
+--native-null-assertions
+--no-source-maps -O4
+--minify -o
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+app.dill
+--packages=/home/abhiroo
+p/Antigravity/Claude/App
+/.dart_tool/package_conf
+ig.json --cfe-only
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+main.dart
+[   +3 ms] dart2wasm:
+Starting due to {}
+[   +5 ms] executing:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/dart-sdk/bin/dart
+compile wasm
+--packages=/home/abhiroo
+p/Antigravity/Claude/App
+/.dart_tool/package_conf
+ig.json
+--extra-compiler-option=
+--platform=/home/abhiroo
+p/Antigravity/Claude/flu
+tter/bin/cache/flutter_w
+eb_sdk/kernel/dart2wasm_
+platform.dill
+-Ddart.vm.profile=false
+-Ddart.vm.product=true
+--extra-compiler-option=
+--delete-tostring-packag
+e-uri=dart:ui
+--extra-compiler-option=
+--delete-tostring-packag
+e-uri=package:flutter
+--extra-compiler-option=
+--import-shared-memory
+--extra-compiler-option=
+--shared-memory-max-page
+s=32768
+-DFLUTTER_VERSION=3.41.1
+-DFLUTTER_CHANNEL=stable
+-DFLUTTER_GIT_URL=https:
+//github.com/flutter/flu
+tter.git
+-DFLUTTER_FRAMEWORK_REVI
+SION=582a0e7c55
+-DFLUTTER_ENGINE_REVISIO
+N=3452d735bd
+-DFLUTTER_DART_VERSION=3
+.11.0
+-DFLUTTER_WEB_USE_SKIA=f
+alse
+-DFLUTTER_WEB_USE_SKWASM
+=true
+-DFLUTTER_WEB_CANVASKIT_
+URL=https://www.gstatic.
+com/flutter-canvaskit/34
+52d735bd38224ef2db85ca76
+3d862d6326b17f/
+--extra-compiler-option=
+--depfile=/home/abhiroop
+/Antigravity/Claude/App/
+.dart_tool/flutter_build
+/e90e5ad3b336f3f9e096350
+74d05a6f1/dart2wasm.d
+-O2 --strip-wasm
+--no-source-maps
+--minify
+--extra-compiler-option=
+--dry-run -o
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+main.dart.wasm
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+main.dart
+[[1m+42055 ms[22m] Compiled
+47,303,855 input bytes
+(39,278,092 characters
+source) to 36,331,352
+kernel bytes in 41.6
+seconds
+              Dart file
+              .dart_tool
+              /flutter_b
+              uild/e90e5
+              ad3b336f3f
+              9e09635074
+              d05a6f1/ma
+              in.dart
+              compiled
+              to dill:
+              .dart_tool
+              /flutter_b
+              uild/e90e5
+              ad3b336f3f
+              9e09635074
+              d05a6f1/ap
+              p.dill.
+[   +6 ms] executing:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/dart-sdk/bin/dart
+compile js
+--platform-binaries=/hom
+e/abhiroop/Antigravity/C
+laude/flutter/bin/cache/
+flutter_web_sdk/kernel
+--invoker=flutter_tool
+-Ddart.vm.product=true
+-DFLUTTER_VERSION=3.41.1
+-DFLUTTER_CHANNEL=stable
+-DFLUTTER_GIT_URL=https:
+//github.com/flutter/flu
+tter.git
+-DFLUTTER_FRAMEWORK_REVI
+SION=582a0e7c55
+-DFLUTTER_ENGINE_REVISIO
+N=3452d735bd
+-DFLUTTER_DART_VERSION=3
+.11.0
+-DFLUTTER_WEB_USE_SKIA=t
+rue
+-DFLUTTER_WEB_USE_SKWASM
+=false
+-DFLUTTER_WEB_CANVASKIT_
+URL=https://www.gstatic.
+com/flutter-canvaskit/34
+52d735bd38224ef2db85ca76
+3d862d6326b17f/
+--native-null-assertions
+--no-source-maps -O4
+--minify -o
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+main.dart.js
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+app.dill
+[[1m+64131 ms[22m]
+../flutter/packages/flut
+ter/lib/src/widgets/widg
+et_state.dart:1054:9:
+              Hint: This
+              'noSuchMet
+              hod'
+              implementa
+              tion is
+              guaranteed
+              to throw
+              an
+              exception.
+              The
+              generated
+              code will
+              be smaller
+              if it is
+              rewritten.
+              Rewrite to
+              'noSuchMet
+              hod(Invoca
+              tion i) =>
+              super.noSu
+              chMethod(i
+              );'.
+              Never
+              noSuchMeth
+              od(Invocat
+              ion
+              invocation
+              ) {
+              ^
+              Compiled
+              53,519,072
+              input
+              bytes
+              (9,201,965
+              characters
+              source) to
+              2,787,977
+              characters
+              JavaScript
+              in 63.8
+              seconds
+[[1m +149 ms[22m] dart2js:
+Complete
+[36m[[1m+28516 ms[22m] [1mWasm dry run[39m
+[36msucceeded.[22m[39m
+[36m[1m[39m
+[36mConsider building and[22m[39m
+[36m[1m[39m
+[36mtesting your application[22m[39m
+[36m[1m[39m
+[36mwith the `--wasm` flag.[22m[39m
+[36m[1m                     See[39m
+[36mdocs for more info:[22m[39m
+[36m[1m[39m
+[36mhttps://docs.flutter.dev[22m[39m
+[36m[1m[39m
+[36m/platform-integration/we[22m[39m
+[36m[1m[39m
+[36mb/wasm[22m[39m
+[36m[  +12 ms] [1mUse[39m
+[36m--no-wasm-dry-run to[22m[39m
+[36m[1m           disable these[39m
+[36mwarnings.[22m[39m
+[   +4 ms] dart2wasm:
+Complete
+[  +19 ms]
+web_release_bundle:
+Starting due to {}
+[[1m +471 ms[22m] shaderc
+command:
+[/home/abhiroop/Antigrav
+ity/Claude/flutter/bin/c
+ache/artifacts/engine/li
+nux-x64/impellerc,
+--sksl, --iplr, --json,
+--sl=/home/abhiroop/Anti
+gravity/Claude/App/build
+/web/assets/shaders/ink_
+sparkle.frag,
+--spirv=/home/abhiroop/A
+ntigravity/Claude/App/bu
+ild/web/assets/shaders/i
+nk_sparkle.frag.spirv,
+--input=/home/abhiroop/A
+ntigravity/Claude/flutte
+r/packages/flutter/lib/s
+rc/material/shaders/ink_
+sparkle.frag,
+--input-type=frag,
+--include=/home/abhiroop
+/Antigravity/Claude/flut
+ter/packages/flutter/lib
+/src/material/shaders,
+--include=/home/abhiroop
+/Antigravity/Claude/flut
+ter/bin/cache/artifacts/
+engine/linux-x64/shader_
+lib]
+[   +8 ms] shaderc
+command:
+[/home/abhiroop/Antigrav
+ity/Claude/flutter/bin/c
+ache/artifacts/engine/li
+nux-x64/impellerc,
+--sksl, --iplr, --json,
+--sl=/home/abhiroop/Anti
+gravity/Claude/App/build
+/web/assets/shaders/stre
+tch_effect.frag,
+--spirv=/home/abhiroop/A
+ntigravity/Claude/App/bu
+ild/web/assets/shaders/s
+tretch_effect.frag.spirv
+,
+--input=/home/abhiroop/A
+ntigravity/Claude/flutte
+r/packages/flutter/lib/s
+rc/material/shaders/stre
+tch_effect.frag,
+--input-type=frag,
+--include=/home/abhiroop
+/Antigravity/Claude/flut
+ter/packages/flutter/lib
+/src/material/shaders,
+--include=/home/abhiroop
+/Antigravity/Claude/flut
+ter/bin/cache/artifacts/
+engine/linux-x64/shader_
+lib]
+[  +64 ms] Running
+command:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/dart-sdk/bin/dart
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/artifacts/engine/lin
+ux-x64/const_finder.dart
+.snapshot --kernel-file
+/home/abhiroop/Antigravi
+ty/Claude/App/.dart_tool
+/flutter_build/e90e5ad3b
+336f3f9e09635074d05a6f1/
+app.dill
+--class-library-uri
+package:flutter/src/widg
+ets/icon_data.dart
+--class-name IconData
+--annotation-class-name
+_StaticIconProvider
+--annotation-class-libra
+ry-uri
+package:flutter/src/widg
+ets/icon_data.dart
+[[1m+3998 ms[22m] Expected to
+find fontFamily for
+constant IconData with
+codepoint: 128842.0, but
+found fontFamily: null.
+This usually means you
+are relying on the
+system font.
+Alternatively, font
+families in an IconData
+class can be provided in
+the assets section of
+your pubspec.yaml, or
+you are missing
+"uses-material-design:
+true".
+[        ] Expected to
+find fontFamily for
+constant IconData with
+codepoint: 9658.0, but
+found fontFamily: null.
+This usually means you
+are relying on the
+system font.
+Alternatively, font
+families in an IconData
+class can be provided in
+the assets section of
+your pubspec.yaml, or
+you are missing
+"uses-material-design:
+true".
+[   +3 ms] Running
+font-subset:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/artifacts/engine/lin
+ux-x64/font-subset
+/home/abhiroop/Antigravi
+ty/Claude/App/build/web/
+assets/packages/cupertin
+o_icons/assets/Cupertino
+Icons.ttf
+/home/abhiroop/.pub-cach
+e/hosted/pub.dev/cuperti
+no_icons-1.0.8/assets/Cu
+pertinoIcons.ttf, using
+codepoints 62468 62730
+62717 62419 62415 62629
+62318 optional:32
+[   +1 ms] Running
+font-subset:
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/artifacts/engine/lin
+ux-x64/font-subset
+/home/abhiroop/Antigravi
+ty/Claude/App/build/web/
+assets/fonts/MaterialIco
+ns-Regular.otf
+/home/abhiroop/Antigravi
+ty/Claude/flutter/bin/ca
+che/artifacts/material_f
+onts/MaterialIcons-Regul
+ar.otf, using codepoints
+983922 61464 63624 61495
+58361 57527 63627 63428
+983133 983134 62329
+983403 983663 62775
+983658 983146 983148
+62968 983750 62096 57490
+62832 57706 58332 57502
+57501 57496 57694 57695
+57657 57882 57504 61453
+57634 57498 57926 57704
+57491 61061 61060 62834
+62833 59283 59282 57499
+57500 61069 61068 62842
+62841 59291 59290 58011
+58012 61575 61576 63348
+63349 59797 59798 58372
+58370 61930 61927 63708
+63705 60157 60154 58771
+58189 62328 61752 983402
+63526 60555 59975 58814
+58813 57846 57862 58727
+57686 61764 57402
+optional:32
+[  +36 ms] [1mFont asset[22m
+[1m
+"CupertinoIcons.ttf" was[22m
+[1m           tree-shaken,
+reducing it[22m
+[1m           from 257628
+to 1472[22m
+[1m           bytes (99.4%
+reduction).[22m
+[1m           Tree-shaking
+can be[22m
+[1m           disabled by
+providing[22m
+[1m           the[22m
+[1m
+--no-tree-shake-icons[22m
+[1m           flag when
+building your[22m
+[1m           app.[22m
+[   +5 ms] [1mFont asset[22m
+[1m
+"MaterialIcons-Regular.o[22m
+[1m           tf" was
+tree-shaken,[22m
+[1m           reducing it
+from 1645184[22m
+[1m           to 10640
+bytes (99.4%[22m
+[1m           reduction).
+Tree-shaking[22m
+[1m           can be
+disabled by[22m
+[1m           providing the[22m
+[1m
+--no-tree-shake-icons[22m
+[1m           flag when
+building your[22m
+[1m           app.[22m
+[  +14 ms]
+web_release_bundle:
+Complete
+[[1m +131 ms[22m]
+web_service_worker:
+Starting due to {}
+[   +3 ms]
+web_service_worker:
+Complete
+[[1m +419 ms[22m] Persisting
+file store
+[  +32 ms] Done
+persisting file store
+[  +58 ms] Compiling
+lib/main.dart for the
+Web... (completed in
+141.3s)
+[   +3 ms] [1m[32m✓[39m Built
+build/web[22m
+[   +5 ms] "flutter web"
+took 145,525ms.
+[  +33 ms] Running 1
+shutdown hook
+[   +1 ms] Shutdown
+hooks complete
+[        ] exiting with
+code 0
+
+Script done on 2026-02-16 03:41:31+01:00 [COMMAND_EXIT_CODE="0"]

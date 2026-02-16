@@ -62,7 +62,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
-                  NebulaColors.accentPurple.withOpacity(0.3),
+                  NebulaColors.accentPurple.withValues(alpha: 0.3),
                   Colors.transparent,
                 ],
               ),
@@ -121,7 +121,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 4),
                     backgroundColor: Colors.transparent,
                     selectedBackgroundColor:
-                        NebulaColors.accentPurple.withOpacity(0.1),
+                        NebulaColors.accentPurple.withValues(alpha: 0.1),
                     side: BorderSide.none,
                   ),
                 ),
@@ -160,7 +160,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   });
                 },
                 labelType: NavigationRailLabelType.all,
-                indicatorColor: NebulaColors.accentPurple.withOpacity(0.15),
+                indicatorColor:
+                    NebulaColors.accentPurple.withValues(alpha: 0.15),
                 destinations: const [
                   NavigationRailDestination(
                     icon: Icon(Icons.grid_view_rounded),
@@ -208,7 +209,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   });
                 },
                 backgroundColor: NebulaColors.bgDeep,
-                indicatorColor: NebulaColors.accentPurple.withOpacity(0.15),
+                indicatorColor:
+                    NebulaColors.accentPurple.withValues(alpha: 0.15),
                 destinations: const [
                   NavigationDestination(
                     icon: Icon(Icons.grid_view_rounded,
@@ -367,12 +369,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
       return Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [color, color.withOpacity(0.7)],
+            colors: [color, color.withValues(alpha: 0.7)],
           ),
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: color.withOpacity(0.25),
+              color: color.withValues(alpha: 0.25),
               blurRadius: 10,
               offset: const Offset(0, 3),
             ),
@@ -395,7 +397,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       icon: Icon(icon, size: 16, color: color),
       label: Text(label, style: TextStyle(fontSize: 13, color: color)),
       style: OutlinedButton.styleFrom(
-        side: BorderSide(color: color.withOpacity(0.4)),
+        side: BorderSide(color: color.withValues(alpha: 0.4)),
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
@@ -416,7 +418,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: NebulaColors.accentCyan.withOpacity(0.1),
+                color: NebulaColors.accentCyan.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: const Icon(Icons.person_add_rounded,
@@ -573,7 +575,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: NebulaColors.accentGreen.withOpacity(0.1),
+                color: NebulaColors.accentGreen.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.shield_rounded,
@@ -635,7 +637,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.people_outline_rounded,
-                size: 64, color: NebulaColors.textMuted.withOpacity(0.5)),
+                size: 64, color: NebulaColors.textMuted.withValues(alpha: 0.5)),
             const SizedBox(height: 16),
             const Text(
               'No leads yet',
@@ -694,7 +696,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         child: InkWell(
           borderRadius: BorderRadius.circular(14),
           onTap: () => _showLeadDetails(context, lead),
-          hoverColor: NebulaColors.accentPurple.withOpacity(0.04),
+          hoverColor: NebulaColors.accentPurple.withValues(alpha: 0.04),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             child: Row(
@@ -706,8 +708,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        NebulaColors.accentPurple.withOpacity(0.3),
-                        NebulaColors.accentBlue.withOpacity(0.3),
+                        NebulaColors.accentPurple.withValues(alpha: 0.3),
+                        NebulaColors.accentBlue.withValues(alpha: 0.3),
                       ],
                     ),
                     borderRadius: BorderRadius.circular(12),
@@ -755,9 +757,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                   decoration: BoxDecoration(
-                    color: statusColor.withOpacity(0.1),
+                    color: statusColor.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: statusColor.withOpacity(0.25)),
+                    border:
+                        Border.all(color: statusColor.withValues(alpha: 0.25)),
                   ),
                   child: Text(
                     statusLabel,
@@ -784,7 +787,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       borderRadius: BorderRadius.circular(8),
                       boxShadow: [
                         BoxShadow(
-                          color: NebulaColors.accentPurple.withOpacity(0.2),
+                          color:
+                              NebulaColors.accentPurple.withValues(alpha: 0.2),
                           blurRadius: 8,
                           offset: const Offset(0, 2),
                         ),

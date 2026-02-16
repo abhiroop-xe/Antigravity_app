@@ -8,7 +8,7 @@ export PATH="$FLUTTER_ROOT/bin:$PATH"
 export PUB_CACHE="${PUB_CACHE:-/tmp/pub-cache}"
 
 echo "Building Nebula v1 (Lightweight)..."
-flutter build web --release --base-href "/Antigravity_app/" --web-renderer html
+flutter build web --release --base-href "/Antigravity_app/"
 
 # 2. Initialize a git repo in the build folder
 cd build/web

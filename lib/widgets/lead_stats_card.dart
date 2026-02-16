@@ -30,7 +30,7 @@ class LeadStatsCard extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: [
             NebulaColors.bgCard,
-            color.withOpacity(0.05),
+            color.withValues(alpha: 0.05),
           ],
         ),
       ),
@@ -42,7 +42,7 @@ class LeadStatsCard extends StatelessWidget {
             Row(
               children: [
                 if (icon != null) ...[
-                  Icon(icon, size: 16, color: color.withOpacity(0.7)),
+                  Icon(icon, size: 16, color: color.withValues(alpha: 0.7)),
                   const SizedBox(width: 8),
                 ],
                 Text(
@@ -77,7 +77,7 @@ class LeadStatsCard extends StatelessWidget {
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: color.withOpacity(0.2),
+                          color: color.withValues(alpha: 0.2),
                           blurRadius: 16,
                           spreadRadius: 1,
                         ),
