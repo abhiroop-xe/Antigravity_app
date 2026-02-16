@@ -99,6 +99,7 @@ class CsvService {
         (headers.contains('name') || headers.contains('email')) ? 1 : 0;
 
     for (int i = startIdx; i < rows.length; i++) {
+      if (leads.length >= 200) break;
       final row = rows[i];
       if (row.isEmpty) continue; // Skip completely empty rows
 
