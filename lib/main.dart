@@ -101,12 +101,12 @@ class MyApp extends StatelessWidget {
             ),
             iconTheme: IconThemeData(color: NebulaColors.textSecondary),
           ),
-          cardTheme: CardTheme(
-            color: NebulaColors.bgCard,
+          cardTheme: const CardTheme(
+            color: NebulaColors.bgSurface,
             elevation: 0,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
-              side: const BorderSide(color: NebulaColors.borderSubtle, width: 1),
+              borderRadius: BorderRadius.all(Radius.circular(16)),
+              side: BorderSide(color: NebulaColors.borderSubtle),
             ),
           ),
           navigationRailTheme: const NavigationRailThemeData(
@@ -147,7 +147,8 @@ class MyApp extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: NebulaColors.accentPurple, width: 2),
+              borderSide:
+                  const BorderSide(color: NebulaColors.accentPurple, width: 2),
             ),
             labelStyle: const TextStyle(color: NebulaColors.textSecondary),
             hintStyle: const TextStyle(color: NebulaColors.textMuted),
@@ -156,18 +157,22 @@ class MyApp extends StatelessWidget {
           snackBarTheme: SnackBarThemeData(
             backgroundColor: NebulaColors.bgCard,
             contentTextStyle: const TextStyle(color: NebulaColors.textPrimary),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             behavior: SnackBarBehavior.floating,
           ),
           dividerTheme: const DividerThemeData(
             color: NebulaColors.borderSubtle,
           ),
-          dialogTheme: DialogTheme(
+          dialogTheme: const DialogTheme(
             backgroundColor: NebulaColors.bgCard,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            titleTextStyle: const TextStyle(
-              fontFamily: 'Inter',
-              fontSize: 18,
+            surfaceTintColor: Colors.transparent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              side: BorderSide(color: NebulaColors.borderSubtle),
+            ),
+            titleTextStyle: TextStyle(
+              fontSize: 20,
               fontWeight: FontWeight.w700,
               color: NebulaColors.textPrimary,
             ),

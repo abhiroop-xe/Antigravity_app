@@ -101,8 +101,9 @@ class LeadProvider extends ChangeNotifier {
       }
     } catch (e) {
       if (context.mounted) {
+        final errorMsg = e.toString().replaceFirst('Exception: ', '');
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('CSV Import Failed: $e')),
+          SnackBar(content: Text('CSV Import: $errorMsg')),
         );
       }
     } finally {

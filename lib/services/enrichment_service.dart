@@ -12,6 +12,7 @@ class EnrichmentService {
   final AuditService _auditService = AuditService();
   String? _mistralKey;
   String? _geminiKey;
+  String? _openAIKey;
 
   // Dynamic toggle for token saving
   bool _forceMock = true;
@@ -19,6 +20,7 @@ class EnrichmentService {
   EnrichmentService() {
     _mistralKey = dotenv.env['MISTRAL_API_KEY'];
     _geminiKey = dotenv.env['GEMINI_API_KEY'];
+    _openAIKey = dotenv.env['OPENAI_API_KEY'];
   }
 
   bool get isMockMode => _forceMock;
@@ -46,8 +48,10 @@ class EnrichmentService {
       return result;
     }
 
-    // 4. Prioritize Mistral if available, otherwise try Gemini
-    if (_mistralKey != null &&
+    // 4. Prioritize OpenAI if available (User request), then Mistral, then Gemini
+    if (_openAIKey != null && _openAIKey!.isNotEmpty) {
+      return await _enrichWithOpenAI(scrubbedCompany, scrubbedRole);
+    } else if (_mistralKey != null &&
         _mistralKey != 'your-mistral-api-key' &&
         _mistralKey!.isNotEmpty) {
       return await _enrichWithMistral(scrubbedCompany, scrubbedRole);
@@ -60,6 +64,51 @@ class EnrichmentService {
           'Enriched data for $scrubbedRole at $scrubbedCompany (Mock AI Summary)';
       await _auditService.logAction(action: 'Enrichment Completed (Mock)');
       return result;
+    }
+  }
+
+  Future<String> _enrichWithOpenAI(String company, String role) async {
+    try {
+      final response = await http.post(
+        Uri.parse('https://api.openai.com/v1/chat/completions'),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer $_openAIKey',
+        },
+        body: jsonEncode({
+          'model': 'gpt-4o', // Premium model
+          'messages': [
+            {
+              'role': 'system',
+              'content':
+                  'You are a business research assistant. Provide concise, professional summaries.'
+            },
+            {
+              'role': 'user',
+              'content':
+                  'Provide a 2-sentence summary for $role at $company. Focus on responsibilities and company impact.'
+            }
+          ],
+          'max_tokens': 150,
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        final result = data['choices'][0]['message']['content'];
+        await _auditService.logAction(action: 'Enrichment Success (OpenAI)');
+        _tokenService.incrementUsage();
+        return result;
+      } else {
+        throw Exception(
+            'OpenAI Error: ${response.statusCode} - ${response.body}');
+      }
+    } catch (e) {
+      debugPrint('OpenAI failed, trying Mistral if available: $e');
+      if (_mistralKey != null && _mistralKey!.isNotEmpty) {
+        return await _enrichWithMistral(company, role);
+      }
+      rethrow;
     }
   }
 
