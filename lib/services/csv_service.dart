@@ -1,11 +1,11 @@
 import 'dart:convert';
-// import 'dart:io'; // Removed for Web compatibility
 import 'package:file_picker/file_picker.dart';
+import 'package:csv/csv.dart';
 import '../models/lead.dart';
 import 'package:uuid/uuid.dart';
 
 class CsvService {
-  final Uuid _uuid = Uuid();
+  static const _uuid = Uuid();
 
   /// Picks a CSV file and returns a list of Leads.
   Future<List<Lead>> pickAndParseCsv() async {
@@ -13,54 +13,66 @@ class CsvService {
       FilePickerResult? result = await FilePicker.platform.pickFiles(
         type: FileType.custom,
         allowedExtensions: ['csv'],
-        withData: true, // Ensure bytes are available on all platforms
+        withData: true,
       );
 
-      if (result != null) {
-        final file = result.files.single;
-        
-        String csvString;
-        if (file.bytes != null) {
-           csvString = utf8.decode(file.bytes!);
-        } else {
-           // Fallback or error if no bytes (should not happen with withData: true)
-           throw Exception("Could not read file data (Bytes missing).");
-        }
+      if (result != null && result.files.isNotEmpty) {
+        final file = result.files.first;
+        if (file.bytes == null) return [];
 
-        // Manual CSV Parsing (Robust enough for simple data)
-        List<List<dynamic>> rows = [];
-        List<String> lines = const LineSplitter().convert(csvString);
-        for (var line in lines) {
-          if (line.trim().isEmpty) continue;
-          // Split by comma, handling potential simple quotes if needed (simplified here)
-          rows.add(line.split(',').map((e) => e.trim()).toList());
-        }
-        
-        // Remove header row if it exists (basic check)
-        if (rows.isNotEmpty && rows[0][0].toString().toLowerCase().contains('name')) {
-          rows.removeAt(0);
-        }
+        final csvString = utf8.decode(file.bytes!).trim();
+        const converter = CsvToListConverter();
+        final List<List<dynamic>> rows = converter.convert(csvString);
+
+        if (rows.isEmpty) return [];
+
+        // Identify header indices (case-insensitive)
+        final headers = rows[0].map((e) => e.toString().toLowerCase()).toList();
+        int nameIdx = headers.indexOf('name');
+        int emailIdx = headers.indexOf('email');
+        int companyIdx = headers.indexOf('company');
+        int roleIdx = headers.indexOf('role');
+        int phoneIdx = headers.indexOf('phone');
+
+        // Fallback to indices if headers not named exactly
+        if (nameIdx == -1) nameIdx = 0;
+        if (emailIdx == -1 && headers.length > 1) emailIdx = 1;
+        if (companyIdx == -1 && headers.length > 2) companyIdx = 2;
+        if (roleIdx == -1 && headers.length > 3) roleIdx = 3;
+        if (phoneIdx == -1 && headers.length > 4) phoneIdx = 4;
 
         List<Lead> leads = [];
-        for (var row in rows) {
-          // Expecting format: Name, Email, Company, Role, Phone
-          if (row.length >= 4) {
-            leads.add(Lead(
-              id: _uuid.v4(),
-              name: row[0].toString(),
-              email: row[1].toString(),
-              company: row[2].toString(),
-              role: row[3].toString(),
-              phone: row.length > 4 ? row[4].toString() : '',
-            ));
-          }
+        // Skip header row if it looks like headers
+        final startIdx =
+            (headers.contains('name') || headers.contains('email')) ? 1 : 0;
+
+        for (int i = startIdx; i < rows.length; i++) {
+          final row = rows[i];
+          if (row.length < 2) continue; // Skip empty/invalid rows
+
+          leads.add(Lead(
+            id: _uuid.v4(),
+            userId: '',
+            name: _getValue(row, nameIdx),
+            email: _getValue(row, emailIdx),
+            company: _getValue(row, companyIdx),
+            role: _getValue(row, roleIdx),
+            phone: _getValue(row, phoneIdx),
+          ));
         }
         return leads;
       }
       return [];
     } catch (e) {
-      print("Error parsing CSV: $e");
+      // print("CSV Service Error: $e");
       return [];
     }
+  }
+
+  String _getValue(List<dynamic> row, int index) {
+    if (index >= 0 && index < row.length) {
+      return row[index]?.toString() ?? '';
+    }
+    return '';
   }
 }

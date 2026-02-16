@@ -1,4 +1,4 @@
-name: secure_lead_engine
+name: nebula_v1
 description: A secure lead intelligence engine with PII scrubbing and AI enrichment.
 publish_to: 'none'
 version: 1.0.0+1
@@ -25,6 +25,7 @@ dependencies:
   go_router: ^14.0.0
   cupertino_icons: ^1.0.2
   http: ^1.6.0
+  crypto: ^3.0.3
 
 dev_dependencies:
   flutter_test:
