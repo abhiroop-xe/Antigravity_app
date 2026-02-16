@@ -59,6 +59,9 @@ class CsvService {
       throw Exception('The selected CSV file has no text content.');
     }
 
+    // Normalize line endings to avoid issues with Mac (\r) or mixed endings
+    csvString = csvString.replaceAll('\r\n', '\n').replaceAll('\r', '\n');
+
     debugPrint('CSV Service: Parsed string length: ${csvString.length}');
     if (csvString.length < 100) {
       debugPrint('CSV Service: Content snippet: $csvString');
@@ -67,6 +70,7 @@ class CsvService {
     const converter = CsvToListConverter(
       shouldParseNumbers: false,
       allowInvalid: true,
+      eol: '\n',
     );
     final List<List<dynamic>> rows = converter.convert(csvString);
 
