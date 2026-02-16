@@ -1,6 +1,12 @@
 #!/bin/bash
+set -euo pipefail
 
 # 1. Build the Nebula v1 web app (HTML renderer is lighter)
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+FLUTTER_ROOT="$DIR/tools/flutter"
+export PATH="$FLUTTER_ROOT/bin:$PATH"
+export PUB_CACHE="${PUB_CACHE:-/tmp/pub-cache}"
+
 echo "Building Nebula v1 (Lightweight)..."
 flutter build web --release --base-href "/Antigravity_app/" --web-renderer html
 

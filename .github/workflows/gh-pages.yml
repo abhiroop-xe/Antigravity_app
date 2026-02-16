@@ -1,0 +1,53 @@
+name: Deploy Flutter Web to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      PUB_CACHE: /tmp/pub-cache
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure Flutter SDK executable
+        run: chmod +x tools/flutter/bin/flutter
+        working-directory: App
+
+      - name: Create .env for build
+        run: |
+          cat <<'ENVEOF' > .env
+          SUPABASE_URL=${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
+          MISTRAL_API_KEY=${{ secrets.MISTRAL_API_KEY }}
+          GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          ENVEOF
+        working-directory: App
+
+      - name: Flutter pub get
+        run: tools/flutter/bin/flutter pub get
+        working-directory: App
+
+      - name: Build web
+        run: tools/flutter/bin/flutter build web --release --base-href "/Antigravity_app/" --web-renderer html
+        working-directory: App
+
+      - name: Add .nojekyll
+        run: touch build/web/.nojekyll
+        working-directory: App
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: App/build/web
