@@ -68,8 +68,7 @@ class LeadProvider extends ChangeNotifier {
       if (newLeadsData.isEmpty) {
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-                content: Text('No leads found in CSV or action cancelled.')),
+            const SnackBar(content: Text('CSV selection cancelled.')),
           );
         }
         return;

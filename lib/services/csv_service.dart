@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:csv/csv.dart';
@@ -18,6 +19,7 @@ class CsvService {
       result = await FilePicker.platform.pickFiles(
         type: FileType.any,
         withData: true,
+        withReadStream: true,
       );
     } catch (e) {
       debugPrint('FilePicker error: $e');
@@ -38,18 +40,19 @@ class CsvService {
           'Please select a CSV file. Selected file: "${file.name}"');
     }
 
-    if (file.bytes == null || file.bytes!.isEmpty) {
-      debugPrint('CSV Picker: file.bytes is null or empty');
+    final fileBytes = await _readFileBytes(file);
+    if (fileBytes == null || fileBytes.isEmpty) {
+      debugPrint('CSV Picker: no readable content from bytes/stream/path');
       throw Exception('Could not read file data or file is empty.');
     }
 
     String csvString;
     try {
       // Handle potential UTF-8 decoding issues
-      csvString = utf8.decode(file.bytes!).trim();
+      csvString = utf8.decode(fileBytes).trim();
     } catch (e) {
       debugPrint('UTF-8 Decode Error: $e. Falling back to latin1.');
-      csvString = latin1.decode(file.bytes!).trim();
+      csvString = latin1.decode(fileBytes).trim();
     }
 
     if (csvString.isEmpty) {
@@ -106,6 +109,36 @@ class CsvService {
     }
 
     return leads;
+  }
+
+  Future<List<int>?> _readFileBytes(PlatformFile file) async {
+    if (file.bytes != null && file.bytes!.isNotEmpty) {
+      return file.bytes!;
+    }
+
+    final stream = file.readStream;
+    if (stream != null) {
+      final chunks = <int>[];
+      await for (final chunk in stream) {
+        chunks.addAll(chunk);
+      }
+      if (chunks.isNotEmpty) {
+        return chunks;
+      }
+    }
+
+    final path = file.path;
+    if (!kIsWeb && path != null && path.isNotEmpty) {
+      final localFile = File(path);
+      if (await localFile.exists()) {
+        final bytes = await localFile.readAsBytes();
+        if (bytes.isNotEmpty) {
+          return bytes;
+        }
+      }
+    }
+
+    return null;
   }
 
   String _getValue(List<dynamic> row, int index) {
